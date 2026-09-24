@@ -1,0 +1,9 @@
+python-telegram-bot[job-queue]==21.6
+yt-dlp
+requests
+aiohttp
+httpx
+h2
+ffmpeg-python==0.2.0
+playwright
+flask

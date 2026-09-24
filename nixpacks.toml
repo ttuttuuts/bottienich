@@ -1,0 +1,10 @@
+[phases.setup]
+nixPkgs = ["chromium", "nss", "freetype", "harfbuzz", "ca-certificates", "glib", "dbus", "xorg.libX11", "xorg.libXcomposite", "xorg.libXdamage", "xorg.libXext", "xorg.libXfixes", "xorg.libXrandr", "xorg.libxcb", "xorg.libXcursor", "xorg.libXi", "xorg.libXrender", "xorg.libXtst", "alsa-lib", "at-spi2-atk", "cups", "gtk3", "pango", "libdrm", "mesa"]
+
+[phases.install]
+cmds = [
+  "pip install -r requirements.txt"
+]
+
+[start]
+cmd = "CHROMIUM_PATH=$(which chromium || which chromium-browser) python bot.py"
